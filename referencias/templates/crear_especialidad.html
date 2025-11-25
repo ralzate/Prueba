@@ -1,0 +1,10 @@
+<form method="post">
+    <h1>Crear especialidad</h1>
+    {% csrf_token %}
+    {% for field in form %}
+        <div>
+            {{ field.label_tag }} {{ field }}
+        </div>
+    {% endfor %}
+    <button type="submit">Enviar</button>
+</form>

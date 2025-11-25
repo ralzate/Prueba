@@ -1,0 +1,12 @@
+<table>
+    <tr>
+        <th>Nombre</th>
+        <th>Descripción</th>
+    </tr>
+    {% for especialidad in especialidades %}
+    <tr>
+        <td>{{ especialidad.nombre }}</td>
+        <td>{{ especialidad.descripcion }}</td>
+    </tr>
+    {% endfor %}
+</table>
